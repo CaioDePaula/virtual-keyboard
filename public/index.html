@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual keyboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+        <label for="tab1" class="tabs__label">
+            <i class="fa-solid fa-gamepad" for="chk-gamepad"></i>
+            Gamepad
+        </label>
+        <div class="tabs__content">
+            <div class="tab__gamepad">
+                <button class="gamepad_controls" data-key-press="w">
+                    <i class="fa-solid fa-angle-up"></i>
+                </button>
+                <button class="gamepad_controls" data-key-press="a">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button class="gamepad_controls" data-key-press="d">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+                <button class="gamepad_controls" data-key-press="s">
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <button class="gamepad_controls" data-key-press="y">
+                    <i class="fa-solid fa-y"></i>
+                </button>
+                <button class="gamepad_controls" data-key-press="g">
+                    <i class="fa-solid fa-g"></i>
+                </button>
+                <button class="gamepad_controls" data-key-press="j">
+                    <i class="fa-solid fa-j"></i>
+                </button>
+                <button class="gamepad_controls" data-key-press="h">
+                    <i class="fa-solid fa-h"></i>
+                </button>
+            </div>
+        </div>
+
+        <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+        <label for="tab2" class="tabs__label">
+            <i class="fa-solid fa-keyboard" for="chk-keyboard"></i>
+            Keyboard
+        </label>
+        <div class="tabs__content">
+            <input type="text" id="keyboard__virtual_input" placeholder="digite algo" autofocus>
+        </div>
+
+        <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+        <label for="tab3" class="tabs__label">
+            <i class="fa-solid fa-computer-mouse" for="chk-mouse"></i>
+            Mouse
+        </label>
+        <div class="tabs__content">
+            <div class="tab__mouse">
+                <button class="btn__mouse__click" data-side="left">Left</button>
+                <button class="btn__mouse__click" data-side="right">Right</button>
+                <!-- <div id="mouse__move__place">
+                    Move mouse
+                </div> -->
+                <canvas id="canvas" id="mouse__move__place">
+                    Your browser does not support canvas element.
+                  </canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.tabs__label {
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 16px;
+}
+
+.tabs__radio {
+display: none;
+}
+
+.tabs__content {
+    order: 1;
+    width: 100%;
+    border-bottom: 3px solid #dddddd;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+}
+
+.tabs__radio:checked + .tabs__label {
+    font-weight: bold;
+    color: #009578;
+    border-bottom: 2px solid #009578;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+    display: initial;
+}
+
+.tab__gamepad {
+    display: flex;
+    padding: 2rem;
+}
+
+.tab__gamepad .gamepad_controls {
+    width: 5rem;
+    height: 5rem;
+    margin: .2rem;
+    border: solid;
+    font-size: 3rem;
+    background: none;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.btn__mouse__click {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+    background: none;
+}
+
+#mouse__move__place {
+    border: solid 1px;
+    min-width: 9rem;
+    min-height: 9rem;
+    flex: 2;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.tab__mouse {
+    display: flex;
+}

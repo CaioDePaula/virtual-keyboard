@@ -1,0 +1,11 @@
+version: '3.9'
+services: 
+  virtual_key:
+    image: "node"
+    command: npm start
+    container_name: virtual_key
+    ports: 
+      - "3000:3000"
+    working_dir: /app/
+    volumes: 
+      - ./:/app/
